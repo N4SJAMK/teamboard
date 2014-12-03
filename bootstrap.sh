@@ -12,4 +12,4 @@ apt-get install -y mongodb-server redis-server
 
 gem install sass
 
-npm install -g gulp bower
+npm install --global --no-bin-links gulp bower
