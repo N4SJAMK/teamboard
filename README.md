@@ -12,20 +12,19 @@
 	
 	2.1. Make sure the box image is correct
 
-		If you're not running a 64bit system, open vagrantfile and look for line:
-		```
-		config.vm.box = "boxes/trusty64"
-		```
-		Change trusty64 to trusty32 and save. This line defines the base system image 
-		used for the virtual machine
+	If you're not running a 64bit system, open vagrantfile and look for line:
+	```
+	config.vm.box = "boxes/trusty64"
+	```
+	Change trusty64 to trusty32 and save. This line defines the base system image 
+	used for the virtual machine
 		
 	2.2. Create the machine
-	
-		```
-		vagrant up
-		```
-		This will spawn a headless virtual machine configured with the tools needed
-		for development. You just supply the editor of your choosing.
+	```
+	vagrant up
+	```
+	This will spawn a headless virtual machine configured with the tools needed
+	for development. You just supply the editor of your choosing.
 
 3. Start building, running and testing the code
 	```
