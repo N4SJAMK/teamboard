@@ -10,7 +10,8 @@
 
 2. Create a machine to develop on:
 	
-	2.1 Make sure the box image is correct
+	2.1. Make sure the box image is correct
+
 		If you're not running a 64bit system, open vagrantfile and look for line:
 		```
 		config.vm.box = "boxes/trusty64"
@@ -18,7 +19,8 @@
 		Change trusty64 to trusty32 and save. This line defines the base system image 
 		used for the virtual machine
 		
-	2.2 Create the machine
+	2.2. Create the machine
+	
 		```
 		vagrant up
 		```
