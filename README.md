@@ -4,7 +4,7 @@
 
 1. Initialize the workspace by running:
 	```
-	sh initialize.sh
+	sh initialize.sh <your name>
 	```
 	This will clone the teamboard components into their respecting repositories.
 
