@@ -9,6 +9,7 @@
 	This will clone the teamboard components into their respecting repositories.
 
 2. Create a machine to develop on:
+	
 	2.1 Make sure the box image is correct
 		If you're not running a 64bit system, open vagrantfile and look for line:
 		```
