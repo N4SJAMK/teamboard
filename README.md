@@ -1,11 +1,10 @@
 # Teamboard
 
-## Setup
+## About Guide
 
 This is a guide how to setup Contriboard development environment by using Vagrant-tool. [Vagnrant](https://www.vagrantup.com/) provides fast and convinient way to deploy a development enviroment without extra work  
 
-
-1. Setting up git, vagrant and downloading files
+## Set up git, vagrant and download files
 
 As you see this is fast guide! We assume you can do some steps without extra guidance..
 
@@ -15,28 +14,27 @@ As you see this is fast guide! We assume you can do some steps without extra gui
   * Download teamboard-repository files as zip package to the your new folder (Download zip)
   * Extract files and now you are ready to progress!
   
+Now you are ready to initialize workspace for Contriboard!
 
 
 
+1. Initialize the workspace by running a initialization commands according you environment:
 
-1. Initialize the workspace by running a initialization commands:
 
-
-If you can use direct ssh access and account to github use command: 
-
+        If you can use direct ssh access and account to github use command: 
 
 	```
 	sh initialize_ssh.sh <your name>
 	```
 	
-
-If you want to clone repositorys using https you should use command:
+        If you want to clone repositorys using https you should use command:
         
         ```
 	sh initialize_https.sh <your name>
 	```
 
-This will clone the teamboard components into their respecting repositories.
+        This will clone the teamboard components into their respecting repositories.
+
 
 2. Create a machine to develop on:
 
@@ -96,11 +94,11 @@ During initialization all needed repositories are cloned in your host machine fo
 
 How to get service running?
 
-Service Starting order: API, IO, Client
+        Service Starting order: API, IO, Client
 
-0. At first you have to start up teamboard-api and teamboard-io services
-1  Change you working directory to the service specific folder eg. teamboard-api or teamboard-io 
-2. All server side components are written using Node.js, so we have to use some node specific commands.
+        At first you have to start up teamboard-api and teamboard-io services
+        Change you working directory to the service specific folder eg. teamboard-api or teamboard-io 
+        All server side components are written using Node.js, so we have to use some node specific commands.
 
         ```
 	npm install
