@@ -1,4 +1,4 @@
-# Teamboard
+# Contriboard development environment setup using Vagrant
 
 ## About Guide
 
