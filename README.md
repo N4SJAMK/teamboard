@@ -22,7 +22,7 @@ Now you are ready to initialize workspace for Contriboard!
 
 Initialize the workspace by running a initialization commands according you environment:
 
-Open console or terminal (in windows you should use git bash).
+Open console or terminal (in windows you should use git bash, because of shell script (sh)).
 
 
 If you can use direct ssh access and account to github use command: 
