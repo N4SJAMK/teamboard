@@ -155,11 +155,7 @@ WINDOWS user! There is some issues with current implementation of library depend
 
 
 ```
-npm install -g bower
-
-npm install 
-
-bower install
+npm install —no-bin-links && bower install && gulp
 ```
 
 Because of vagrant environment our service will be visible in localhost address:
