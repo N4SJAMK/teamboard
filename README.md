@@ -137,10 +137,12 @@ After succesfull build you can now start a service by using command
 
 
 ```
-npm start &&
+npm start &
 ```
 	
-We are starting up service as background process (&&) , so you are able to use same console session to start another services. So you shoudl now do same process with another service component! . It would be more conviniet to run all services in own consoles.	
+	
+	
+We are starting up service as background process (&) [read more](http://stackoverflow.com/questions/4797050/how-to-run-process-as-background-and-never-die) , so you are able to use same console session to start another services. So you shoudl now do same process with another service component! . It would be more conviniet to run all services in own consoles.	
 
 
 
@@ -150,7 +152,7 @@ teamboard-client service component is currently written using Angular framework,
 
 
 ```
-npm start &&
+npm start &
 ```
 
 
