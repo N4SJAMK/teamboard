@@ -146,14 +146,25 @@ We are starting up service as background process (&) [read more](http://stackove
 
 
 
-### Starting up teamboard-client service 
+### Starting up teamboard-client service and login to contriboard
 
-teamboard-client service component is currently written using Angular framework, so we need to use some specific command for it:
+You can now initialize client service. 
+
+WINDOWS user! There is some issues with current implementation of library dependencies, so Windows users cannot currently develop client side. Use Linux :) 
+
 
 
 ```
-npm start &
+npm install -g bower
+
+npm install 
+
+bower install
 ```
+
+Because of vagrant environment our service will be visible in localhost address:
+
+http://localhost:9001
 
 
 
