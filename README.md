@@ -22,21 +22,21 @@ As you see this is fast guide! We assume you can do some steps without extra gui
 1. Initialize the workspace by running a initialization commands:
 
 
-        If you have ssh access and account to github use command 
+If you can use direct ssh access and account to github use command: 
 
 
 	```
 	sh initialize_ssh.sh <your name>
 	```
-        If you want to clone repositorys using https you should use command
+	
+
+If you want to clone repositorys using https you should use command:
         
         ```
 	sh initialize_https.sh <your name>
 	```
 
-
-
-	This will clone the teamboard components into their respecting repositories.
+This will clone the teamboard components into their respecting repositories.
 
 2. Create a machine to develop on:
 
@@ -94,17 +94,18 @@ repositories.
 
 During initialization all needed repositories are cloned in your host machine folders. In production environment deployment and service startup is handled little bit differently than in development environment.
 
+How to get service running?
+
 Service Starting order: API, IO, Client
 
-You want to start up services and you want to try out contriboard in your vagrant environment...
-
-1  First you have to move yourseld fin folder teamboard-api (it's in your new folder!)
-2. All server side components are written using Node.js, so we have to use some node specific commands
+0. At first you have to start up teamboard-api and teamboard-io services
+1  Change you working directory to the service specific folder eg. teamboard-api or teamboard-io 
+2. All server side components are written using Node.js, so we have to use some node specific commands.
 
         ```
 	npm install
 	```
-Now node package manager builds and deploys service components in right folders.
+By running this command Node package manager will build and deploy service components.
 
 
 WINDOWS USER!!!
@@ -114,13 +115,26 @@ There is some issues with symlinks in windows host when using vagrant. This mean
         ```
 	npm install —no-bin-links
 	```
-
-
+	
 3. Next task is to start service
+
+Now you can start up service (in this case teamboard-api)
 
         ```
 	npm start &&
 	```
+	
+After service has started up you should do same commands with teamboard-io
+
+
+
+Starting up teamboard-client
+
+1. client component of contriboard service is written using Angular framework, so we need to use some specific command for it:
+
+
+
+
 
 
 
