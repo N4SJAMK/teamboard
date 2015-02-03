@@ -40,46 +40,51 @@ This will clone the teamboard components into their respecting repositories.
 
 ## Create a machine to develop on:
 
-	1 Make sure the box image is correct: 
+Make sure the box image is correct: 
 	
-	If you're not running a 64bit system, open vagrantfile and look for line:
-	```
-	config.vm.box = "ubuntu/trusty64"
-	```
-	Change trusty64 to trusty32 and save. This line defines the base system image 
-	used for the virtual machine
+If you're not running a 64bit system, open vagrantfile and look for line:
+
+```
+config.vm.box = "ubuntu/trusty64"
+```
+Change trusty64 to trusty32 and save. This line defines the base system image 
+used for the virtual machine
 	
 	
-	2 Create the machine:
+### Create the machine:
 	
-	```
-	vagrant up
-	```
-	This will spawn a headless virtual machine configured with the tools needed
-	for development. You just supply the editor of your choosing.
+```
+vagrant up
+```
+This will spawn a headless virtual machine configured with the tools needed for development. You just supply the editor of your choosing.
 
 
-	3 Adding a box manually:
+### Adding a box manually:
 	
-	If the box cannot be downloaded automatically, you might have to download and 
-	add it manually. You can either take the link from the error message, or find 
-	and download the correct box from here:
-	```
-	https://atlas.hashicorp.com/ubuntu
-	```
-	You can add the box into vagrant by typing:
-	```
-	vagrant box add <file path> --name <name for the box>
-	```
-	Just remember to escape backslashes with \ => \\ or the path won't work.
-	Update the name of the added box into your vagrantfile and run vagrant up again.
+If the box cannot be downloaded automatically, you might have to download and add it manually. You can either take the link from the error message, or find and download the correct box from here:
+
+```
+https://atlas.hashicorp.com/ubuntu
+```
+
+You can add the box into vagrant by typing:
+
+```
+vagrant box add <file path> --name <name for the box>
+```
+
+Just remember to escape backslashes with \ => \\ or the path won't work. Update the name of the added box into your vagrantfile and run vagrant up again.
 	
 	
 ## Start building, running and testing the code
-	```
-	vagrant ssh
-	```
-	This will drop you into the shell of the machine you created above.
+
+Activate ssh terminal connection to your vagrant virtualmachine by using command:
+
+```
+vagrant ssh
+```
+
+This will drop you into the shell of the machine you created above.
 
 ## Running services
 
@@ -110,23 +115,22 @@ npm install
 By running this command Node package manager will build and deploy service components.
 
 
-WINDOWS USER!!!
-
-There is some issues with symlinks in windows host when using vagrant. This means you have to install all packages using some extra parameters:
+WINDOWS USER!!! There is some issues with symlinks in windows host when using vagrant. This means you have to install all packages using some extra parameters:
 
 ```
 npm install —no-bin-links
 ```
 	
-Next task is to start service
+After succesfull build you can now start a service by using command
 
-Now you can start up service (in this case teamboard-api)
 
 ```
 npm start &&
 ```
 	
-After service has started up you should do same commands with teamboard-io
+We are starting up service as background process (&&) , so you are able to use same console session to start another services. So you shoudl now do same process with another service component! . It would be more conviniet to run all services in own consoles.	
+
+
 
 ### Starting up teamboard-client service 
 
