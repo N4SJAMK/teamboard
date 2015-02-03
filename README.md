@@ -148,10 +148,11 @@ We are starting up service as background process (&) [read more](http://stackove
 
 ### Starting up teamboard-client service and login to contriboard
 
-There is curretly some problems... with this repo :)
+There is curretly some problems with this repository.  Currently you cannot start client-service without problems! We will fix it asap!
+
+![](https://openclipart.org/people/dchandlr/dchandlr-dchandlr-work.svg)
 
 
-<img src="/image/512px/svg_to_png/3850/dchandlr-dchandlr-work.png" alt="work" title="work by  dchandlr (/user-detail/dchandlr)" />
 
 You can now initialize client service. 
 
