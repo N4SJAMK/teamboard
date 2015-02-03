@@ -5,7 +5,7 @@
 This is a guide how to setup Contriboard development environment by using Vagrant-tool. [Vagnrant](https://www.vagrantup.com/) provides fast and convinient way to deploy a development enviroment without extra work  
 
 
-0. Setting up git, vagrant and downloading files
+1. Setting up git, vagrant and downloading files
 
 As you see this is fast guide! We assume you can do some steps without extra guidance..
 
