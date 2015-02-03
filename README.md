@@ -4,7 +4,7 @@
 
 This is a guide how to setup Contriboard development environment by using Vagrant-tool. [Vagrant](https://www.vagrantup.com/) provides fast and convinient way to deploy a development enviroment without extra work  
 
-## Set up git, vagrant and download files
+## 1. Set up git, vagrant and download files
 
 As you see this is fast guide! We assume you can do some steps without extra guidance..
 
@@ -18,7 +18,7 @@ Now you are ready to initialize workspace for Contriboard!
 
 
 
-## Initialize the workspace
+## 2. Initialize the workspace
 
 Initialize the workspace by running a initialization commands according you environment:
 
@@ -38,7 +38,7 @@ sh initialize_https.sh <your name>
 This will clone the teamboard components into their respecting repositories.
 
 
-## Create a machine to develop on:
+## 3. Create a machine to develop on:
 
 Make sure the box image is correct: 
 	
@@ -76,7 +76,7 @@ vagrant box add <file path> --name <name for the box>
 Just remember to escape backslashes with \ => \\ or the path won't work. Update the name of the added box into your vagrantfile and run vagrant up again.
 	
 	
-## Start building, running and testing the code
+## 4. Start building, running and testing the code
 
 Activate ssh terminal connection to your vagrant virtualmachine by using command:
 
@@ -86,7 +86,7 @@ vagrant ssh
 
 This will drop you into the shell of the machine you created above.
 
-## Running services
+## 5. Running services
 
 The repositories cloned by running the `initialize.sh` script are the actual
 `teamboard` components that we will be developing. These repositories will be
@@ -95,7 +95,7 @@ mounted to the home folder of the virtual machine we just created.
 For instructions on how to run each component, refer to their individual
 repositories.
 
-## Fast guide to start all Contriboad services
+## 6. Fast guide to start all Contriboad services
 
 During initialization all needed repositories are cloned in your host machine folders. In production environment deployment and service startup is handled little bit differently than in development environment.
 
@@ -145,7 +145,7 @@ npm start &&
 
 
 
-## Workflow
+## 7. Development Workflow
 
 Use version control and the editor of your choosing on your host machine.
 
