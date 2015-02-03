@@ -60,10 +60,14 @@ used for the virtual machine
 	
 	
 ### Create the machine:
+
+Now you start to create vagrant machine according configuration settings in vagrantfile [read more](https://www.vagrantup.com/). You should now give a command in your workspace:
+
 	
 ```
 vagrant up
 ```
+
 This will spawn a headless virtual machine configured with the tools needed for development. You just supply the editor of your choosing.
 
 
