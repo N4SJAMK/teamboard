@@ -150,8 +150,7 @@ We are starting up service as background process (&) [read more](http://stackove
 
 You can now initialize client service. 
 
-WINDOWS user! There is some issues with current implementation of library dependencies, so Windows users cannot currently develop client side.  
-
+WINDOWS user! There is some issues with current implementation of library dependencies, so Windows version of Vagrant users cannot currently develop client side.  
 
 
 ```
@@ -159,7 +158,7 @@ npm install —no-bin-links bower
 
 sudo npm install -g gulp
 
-gulp
+gulp build
 
 ```
 
