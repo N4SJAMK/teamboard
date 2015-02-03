@@ -150,7 +150,7 @@ We are starting up service as background process (&) [read more](http://stackove
 
 You can now initialize client service. 
 
-WINDOWS user! There is some issues with current implementation of library dependencies, so Windows users cannot currently develop client side. Use Linux :) 
+WINDOWS user! There is some issues with current implementation of library dependencies, so Windows users cannot currently develop client side.  
 
 
 
