@@ -148,6 +148,11 @@ We are starting up service as background process (&) [read more](http://stackove
 
 ### Starting up teamboard-client service and login to contriboard
 
+There is curretly some problems... with this repo :)
+
+
+<img src="/image/512px/svg_to_png/3850/dchandlr-dchandlr-work.png" alt="work" title="work by  dchandlr (/user-detail/dchandlr)" />
+
 You can now initialize client service. 
 
 WINDOWS user! There is some issues with current implementation of library dependencies, so Windows version of Vagrant users cannot currently develop client side.  
