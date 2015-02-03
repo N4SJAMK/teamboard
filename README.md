@@ -22,6 +22,8 @@ Now you are ready to initialize workspace for Contriboard!
 
 Initialize the workspace by running a initialization commands according you environment:
 
+Open console or terminal (in windows you should use git bash).
+
 
 If you can use direct ssh access and account to github use command: 
 
@@ -33,6 +35,12 @@ If you want to clone repositorys using https you should use command:
         
 ```
 sh initialize_https.sh <your name>
+```
+
+If you have still problems you should try to do just a clone!
+
+```
+sh initialize_https.sh
 ```
 
 This will clone the teamboard components into their respecting repositories.
