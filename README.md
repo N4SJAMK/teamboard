@@ -2,7 +2,7 @@
 
 ## Setup
 
-This is a guide how to setup Contriboard development environment by using Vagrant-tool. [Vagnrant](https://www.vagrantup.com/) provides fast and conviniet way to deploy a development enviroment without extra work  
+This is a guide how to setup Contriboard development environment by using Vagrant-tool. [Vagnrant](https://www.vagrantup.com/) provides fast and convinient way to deploy a development enviroment without extra work  
 
 
 0. Setting up git, vagrant and downloading files
@@ -89,6 +89,41 @@ mounted to the home folder of the virtual machine we just created.
 
 For instructions on how to run each component, refer to their individual
 repositories.
+
+## Fast guide to start all Contriboad services
+
+During initialization all needed repositories are cloned in your host machine folders. In production environment deployment and service startup is handled little bit differently than in development environment.
+
+Service Starting order: API, IO, Client
+
+You want to start up services and you want to try out contriboard in your vagrant environment...
+
+1  First you have to move yourseld fin folder teamboard-api (it's in your new folder!)
+2. All server side components are written using Node.js, so we have to use some node specific commands
+
+        ```
+	npm install
+	```
+Now node package manager builds and deploys service components in right folders.
+
+
+WINDOWS USER!!!
+
+There is some issues with symlinks in windows host when using vagrant. This means you have to install all packages using some extra parameters:
+
+        ```
+	npm install —no-bin-links
+	```
+
+
+3. Next task is to start service
+
+        ```
+	npm start &&
+	```
+
+
+
 
 ## Workflow
 
