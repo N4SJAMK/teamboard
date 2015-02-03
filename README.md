@@ -150,7 +150,7 @@ We are starting up service as background process (&) [read more](http://stackove
 
 There is curretly some problems with this repository.  Currently you cannot start client-service without problems! We will fix it asap!
 
-![](https://openclipart.org/people/dchandlr/dchandlr-dchandlr-work.svg)
+![](https://openclipart.org/image/256px/svg_to_png/3850/dchandlr-dchandlr-work.png)
 
 
 
