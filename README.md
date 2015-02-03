@@ -18,7 +18,9 @@ Now you are ready to initialize workspace for Contriboard!
 
 
 
-1. Initialize the workspace by running a initialization commands according you environment:
+## Initialize the workspace
+
+Initialize the workspace by running a initialization commands according you environment:
 
 
 If you can use direct ssh access and account to github use command: 
@@ -36,9 +38,9 @@ sh initialize_https.sh <your name>
 This will clone the teamboard components into their respecting repositories.
 
 
-2. Create a machine to develop on:
+## Create a machine to develop on:
 
-	2.1 Make sure the box image is correct: 
+	1 Make sure the box image is correct: 
 	
 	If you're not running a 64bit system, open vagrantfile and look for line:
 	```
@@ -48,7 +50,7 @@ This will clone the teamboard components into their respecting repositories.
 	used for the virtual machine
 	
 	
-	2.2 Create the machine:
+	2 Create the machine:
 	
 	```
 	vagrant up
@@ -57,7 +59,7 @@ This will clone the teamboard components into their respecting repositories.
 	for development. You just supply the editor of your choosing.
 
 
-	2.3 Adding a box manually:
+	3 Adding a box manually:
 	
 	If the box cannot be downloaded automatically, you might have to download and 
 	add it manually. You can either take the link from the error message, or find 
@@ -73,13 +75,13 @@ This will clone the teamboard components into their respecting repositories.
 	Update the name of the added box into your vagrantfile and run vagrant up again.
 	
 	
-3. Start building, running and testing the code
+## Start building, running and testing the code
 	```
 	vagrant ssh
 	```
 	This will drop you into the shell of the machine you created above.
 
-## Running
+## Running services
 
 The repositories cloned by running the `initialize.sh` script are the actual
 `teamboard` components that we will be developing. These repositories will be
@@ -92,17 +94,19 @@ repositories.
 
 During initialization all needed repositories are cloned in your host machine folders. In production environment deployment and service startup is handled little bit differently than in development environment.
 
-How to get service running?
 
-        Service Starting order: API, IO, Client
+Service Starting order: API, IO, Client
 
-        At first you have to start up teamboard-api and teamboard-io services
-        Change you working directory to the service specific folder eg. teamboard-api or teamboard-io 
-        All server side components are written using Node.js, so we have to use some node specific commands.
+### Startig api & io
 
-        ```
-	npm install
-	```
+At first you have to start up teamboard-api and teamboard-io services
+Change you working directory to the service specific folder eg. teamboard-api or teamboard-io 
+All server side components are written using Node.js, so we have to use some node specific commands.
+
+```
+npm install
+```
+
 By running this command Node package manager will build and deploy service components.
 
 
@@ -110,28 +114,28 @@ WINDOWS USER!!!
 
 There is some issues with symlinks in windows host when using vagrant. This means you have to install all packages using some extra parameters:
 
-        ```
-	npm install —no-bin-links
-	```
+```
+npm install —no-bin-links
+```
 	
-3. Next task is to start service
+Next task is to start service
 
 Now you can start up service (in this case teamboard-api)
 
-        ```
-	npm start &&
-	```
+```
+npm start &&
+```
 	
 After service has started up you should do same commands with teamboard-io
 
+### Starting up teamboard-client service 
+
+teamboard-client service component is currently written using Angular framework, so we need to use some specific command for it:
 
 
-Starting up teamboard-client
-
-1. client component of contriboard service is written using Angular framework, so we need to use some specific command for it:
-
-
-
+```
+npm start &&
+```
 
 
 
