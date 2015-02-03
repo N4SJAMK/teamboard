@@ -150,13 +150,14 @@ We are starting up service as background process (&) [read more](http://stackove
 
 There is curretly some problems with this repository.  Currently you cannot start client-service without problems! We will fix it asap!
 
+WINDOWS user! There is some issues with current implementation of library dependencies, so Windows version of Vagrant users cannot currently develop client side.  
+
+
 ![](https://openclipart.org/image/256px/svg_to_png/3850/dchandlr-dchandlr-work.png)
 
 
 
-You can now initialize client service. 
-
-WINDOWS user! There is some issues with current implementation of library dependencies, so Windows version of Vagrant users cannot currently develop client side.  
+When the things are in order you can start client service. 
 
 
 ```
@@ -168,9 +169,11 @@ gulp build
 
 ```
 
-Because of vagrant environment our service will be visible in localhost address:
+Because of using vagrant environment our service will be mapped to localhost network:
 
-http://localhost:9001
+Port 80 (http) will be visible at:
+
+http://localhost:8080
 
 
 
