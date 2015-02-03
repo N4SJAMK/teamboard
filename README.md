@@ -2,7 +2,7 @@
 
 ## About Guide
 
-This is a guide how to setup Contriboard development environment by using Vagrant-tool. [Vagnrant](https://www.vagrantup.com/) provides fast and convinient way to deploy a development enviroment without extra work  
+This is a guide how to setup Contriboard development environment by using Vagrant-tool. [Vagrant](https://www.vagrantup.com/) provides fast and convinient way to deploy a development enviroment without extra work  
 
 ## Set up git, vagrant and download files
 
@@ -21,19 +21,19 @@ Now you are ready to initialize workspace for Contriboard!
 1. Initialize the workspace by running a initialization commands according you environment:
 
 
-        If you can use direct ssh access and account to github use command: 
+If you can use direct ssh access and account to github use command: 
 
-	```
-	sh initialize_ssh.sh <your name>
-	```
-	
-        If you want to clone repositorys using https you should use command:
+```
+sh initialize_ssh.sh <your name>
+```
+
+If you want to clone repositorys using https you should use command:
         
-        ```
-	sh initialize_https.sh <your name>
-	```
+```
+sh initialize_https.sh <your name>
+```
 
-        This will clone the teamboard components into their respecting repositories.
+This will clone the teamboard components into their respecting repositories.
 
 
 2. Create a machine to develop on:
