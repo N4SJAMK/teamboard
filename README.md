@@ -61,7 +61,7 @@ used for the virtual machine
 	
 ### Create the machine:
 
-Now you start to create vagrant machine according configuration settings in vagrantfile [read more](https://www.vagrantup.com/). You should now give a command in your workspace:
+Now you start to create vagrant machine according configuration settings in vagrantfile [read more](https://docs.vagrantup.com/v2/vagrantfile/). You should now give a command in your workspace:
 
 	
 ```
