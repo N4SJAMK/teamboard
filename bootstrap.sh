@@ -19,4 +19,4 @@ apt-get install -y mongodb-server redis-server
 # Build tools for development
 
 gem install sass
-npm install -g --no-bin-links gulp bower
+npm install -g gulp bower
