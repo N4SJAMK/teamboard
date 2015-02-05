@@ -144,7 +144,7 @@ npm start &
 
 We are starting up service as background process (&) [read more](http://stackoverflow.com/questions/4797050/how-to-run-process-as-background-and-never-die) , so you are able to use same console session to start another services. So you shoudl now do same process with another service component! . It would be more conviniet to run all services in own consoles.
 
-### Starting the new client
+### Starting the new client (Windows)
 ```
 npm install && gulp
 ```
@@ -155,6 +155,17 @@ After the service is start, you should be able to see what port the service is
 running on. If you have configured `vagrant` correctly, you can access the
 service at `http://localhost:<PORT>`.
 
+### Starting the new client (Linux)
+
+Under Linux environment the client is started using the same method as when starting api and io components. At first, in client directory, run command
+```
+npm install
+```
+and then
+
+```
+npm start &
+```
 
 ### Starting up teamboard-client service and login to contriboard
 
