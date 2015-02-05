@@ -161,10 +161,15 @@ Under Linux environment the client is started using the same method as when star
 ```
 npm install
 ```
-and then
+then
 
 ```
 npm start &
+```
+and finally, run command
+
+```
+gulp
 ```
 
 ### Starting up teamboard-client service and login to contriboard
