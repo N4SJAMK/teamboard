@@ -11,8 +11,7 @@ As you see this is fast guide! We assume you can do some steps without extra gui
   * Install Git client, vagrant, virtualbox and other needed librarys for you host machine.
   * Open shell/console and try out "vagrant" command! (In windows you should use gitbash as console)
   * Create a brand new folder in your host machine. This is place where all files are stored during development.
-  * Download teamboard-repository files as zip package to the your new folder (Download zip)
-  * Extract files and now you are ready to progress!
+  * Clone teamboard-repository to your new folder.
 
 Now you are ready to initialize workspace for Contriboard!
 
