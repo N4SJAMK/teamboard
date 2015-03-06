@@ -23,6 +23,7 @@ Initialize the workspace by running a initialization commands according you envi
 
 Open console or terminal (in windows you should use git bash, because of shell script (sh)).
 
+Run these scripts in your teamboard folder that you previously cloned.
 
 If you can use direct ssh access and account to github use command:
 
@@ -47,9 +48,9 @@ This will clone the teamboard components into their respecting repositories.
 
 ## 3. Create a machine to develop on:
 
-Make sure the box image is correct:
+Before creating a machine make sure the box image is correct:
 
-If you're not running a 64bit system, open vagrantfile and look for line:
+If you're not running a 64bit system, open vagrantfile from your teamboard folder and look for line:
 
 ```
 config.vm.box = "ubuntu/trusty64"
@@ -60,7 +61,7 @@ used for the virtual machine
 
 ### Create the machine:
 
-Now you start to create vagrant machine according configuration settings in vagrantfile [read more](https://docs.vagrantup.com/v2/vagrantfile/). You should now give a command in your workspace:
+Now you can start to create vagrant machine according configuration settings in vagrantfile [read more](https://docs.vagrantup.com/v2/vagrantfile/). You should now give a command in your workspace:
 
 
 ```
