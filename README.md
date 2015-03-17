@@ -15,10 +15,10 @@ As you see this is fast guide! We assume you can do some steps without extra gui
   * In Linux or Mac environment you can open shell/console and try to execute "vagrant" command! 
   * In Windows system you should use gitbash as console [Google](https://www.google.fi/search?q=gitbash&oq=gitbash&aqs=chrome..69i57.1352j0j4&sourceid=chrome&es_sm=93&ie=UTF-8)
   * Create a new folder in your host machines local folders. Make sure there is enough room for virtual machine.
-  * Created folder will contain all needed files for Contriboard development.
-  * Change you local directory inside new folder (cd new_folder)
-  * First task is to clone some installation scripts inside your folder.
+  * Change you current folder in the new one (cd new_folder)
+  * Your main task is to clone installation scripts in this folder.
   * You can clone a teamboard-repository which contains all what you need.
+  * Make sure your git client is installed....
 
 ```
 git clone https://github.com/N4SJAMK/teamboard
@@ -27,16 +27,20 @@ git clone https://github.com/N4SJAMK/teamboard
   * After clone you should see all files in you local folder
   
 
-
-
-
 ## 2. Initialize the workspace
+
+
 
 Initialize the workspace by running a initialization commands according you environment:
 
-Open console or terminal (in windows you should use git bash, because of shell script (sh)).
+Files which you just cloned from teamboard repository will be your tools 
 
-Run these scripts in your teamboard folder that you previously cloned.
+Now you have to make sure which way you want to clone current Contriboard edge source code.
+
+  * SSH
+  * HTTPS
+
+There is scripts for both of methods..
 
 If you can use direct ssh access and account to github use command:
 
@@ -44,13 +48,13 @@ If you can use direct ssh access and account to github use command:
 sh initialize_ssh.sh <your name>
 ```
 
-If you want to clone repositorys using https you should use command:
+If you want to clone repositorys and fork it using https you should use command:
 
 ```
 sh initialize_https.sh <your name>
 ```
 
-If you have still problems you should try to do just a clone!
+If you have still problems you should try to do just a cloning repository!
 
 ```
 sh initialize_https.sh
