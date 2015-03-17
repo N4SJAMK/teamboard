@@ -18,11 +18,12 @@ As you see this is fast guide! We assume you can do some steps without extra gui
   * First task is to clone some installation scripts inside your folder.
   * You can clone a teamboard-repository which contains all what you need.
 
-''
+```
 git clone https://github.com/N4SJAMK/teamboard
-''
+```
 
   * After clone you should see all files in you local folder
+  
 
 
 
