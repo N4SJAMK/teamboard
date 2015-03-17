@@ -4,6 +4,8 @@
 
 This is a guide how to setup Contriboard development environment by using Vagrant-tool. [Vagrant](https://www.vagrantup.com/) provides fast and convinient way to deploy a development enviroment without extra work
 
+
+
 ## 1. Set up git, vagrant and download files
 
 As you see this is fast guide! We assume you can do some steps without extra guidance..
@@ -147,7 +149,7 @@ By running this command Node package manager will build and deploy service compo
 WINDOWS USER!!! There is some issues with symlinks in windows host when using vagrant. This means you have to install all packages using some extra parameters:
 
 ```
-npm install —no-bin-links
+npm install --no-bin-links
 ```
 
 After succesfull build you can now start a service by using command
@@ -209,3 +211,15 @@ Run, build and test the code on the machine we created by running the `vagrant`
 commands. Vagrant will sync the repositories cloned by running `initialize.sh`
 into the machine we created, so any changes made to those on your host machine
 will reflect on the created machine.
+
+
+## Questions and Answers ?
+
+Q: Why you are talking about Contriboard, but there is so many repositories with name Teamboard! I dont't get it!!
+A: Yes teamboard was a old name of Contriboard and transformation is long trip.... it's progressing...
+
+Q: I got lot of error messages in my Windows setup ?
+A: Did you remember to add parameter --no-bin-links when execution of npm commands?
+
+
+
