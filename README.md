@@ -112,8 +112,14 @@ repositories.
 During initialization all needed repositories are cloned in your host machine folders. In production environment deployment and service startup is handled little bit differently than in development environment.
 
 
-Service Starting order: API, IO, Client
+## Service Starting order: 
 
+ * API 
+ * IO 
+ * Client
+ 
+
+ 
 ### Starting api & io
 
 At first you have to start up teamboard-api and teamboard-io services
@@ -172,34 +178,16 @@ and finally, run command
 gulp
 ```
 
-### Starting up teamboard-client service and login to contriboard
-
-There is curretly some problems with this repository.  Currently you cannot start client-service without problems! We will fix it asap!
-
-WINDOWS user! There is some issues with current implementation of library dependencies, so Windows version of Vagrant users cannot currently develop client side.
-
-![](https://openclipart.org/image/256px/svg_to_png/3850/dchandlr-dchandlr-work.png)
-
-When the things are in order you can start client service.
-
-
-```
-npm install —no-bin-links bower
-
-sudo npm install -g gulp
-
-gulp build
-
-```
 
 Because of using vagrant environment our service will be mapped to localhost network:
 
 Port 80 (http) will be visible at:
 
-http://localhost:8080
+http://localhost:8080 or http://0.0.0.0:8080
 
+In some cases
 
-
+http://127.0.0.1:8080
 
 
 ## 7. Development Workflow
