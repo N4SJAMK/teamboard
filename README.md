@@ -9,11 +9,21 @@ This is a guide how to setup Contriboard development environment by using Vagran
 As you see this is fast guide! We assume you can do some steps without extra guidance..
 
   * Install Git client, vagrant, virtualbox and other needed librarys for you host machine.
-  * Open shell/console and try out "vagrant" command! (In windows you should use gitbash as console)
-  * Create a brand new folder in your host machine. This is place where all files are stored during development.
-  * Clone teamboard-repository to your new folder.
+  * You should install and use latest version of Vagrant from https://www.vagrantup.com/
+  * In Linux or Mac environment you can open shell/console and try to execute "vagrant" command! 
+  * In Windows system you should use gitbash as console [Google](https://www.google.fi/search?q=gitbash&oq=gitbash&aqs=chrome..69i57.1352j0j4&sourceid=chrome&es_sm=93&ie=UTF-8)
+  * Create a new folder in your host machines local folders. Make sure there is enough room for virtual machine.
+  * Created folder will contain all needed files for Contriboard development.
+  * Change you local directory inside new folder (cd new_folder)
+  * First task is to clone some installation scripts inside your folder.
+  * You can clone a teamboard-repository which contains all what you need.
 
-Now you are ready to initialize workspace for Contriboard!
+'
+git clone https://github.com/N4SJAMK/teamboard
+'
+
+  * After clone you should see all files in you local folder
+
 
 
 
