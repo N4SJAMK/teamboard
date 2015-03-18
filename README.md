@@ -198,13 +198,13 @@ gulp
 
 Because of using vagrant environment our service will be mapped to localhost network:
 
-Port 80 (http) will be visible at:
+Port 8000 (http) will be visible at:
 
-http://localhost:8080 or http://0.0.0.0:8080
+http://localhost:8000 or http://0.0.0.0:8000
 
 In some cases
 
-http://127.0.0.1:8080
+http://127.0.0.1:8000
 
 
 ## 7. Development Workflow
