@@ -17,6 +17,6 @@ Vagrant.configure(VAGRANT_API_VERSION) do |config|
 
 	config.vm.synced_folder "io",           "/home/vagrant/teamboard-io"
 	config.vm.synced_folder "api",          "/home/vagrant/teamboard-api"
-	config.vm.synced_folder "client",       "/home/vagrant/teamboard-client"
+	#config.vm.synced_folder "client",       "/home/vagrant/teamboard-client"
 	config.vm.synced_folder "client-react", "/home/vagrant/teamboard-client-react"
 end
