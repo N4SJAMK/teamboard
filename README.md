@@ -136,6 +136,14 @@ During initialization all needed repositories are cloned in your host machine fo
  * Client
  
 
+###Starting Contriboard using script (automatic)
+
+In your teamboard repository run start_contriboard scipt. 
+
+```
+sh start_contriboard.sh
+```
+Or you can start services manually as instructed below.
  
 ### Starting api & io
 
