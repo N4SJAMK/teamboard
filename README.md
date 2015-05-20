@@ -135,15 +135,6 @@ During initialization all needed repositories are cloned in your host machine fo
  * IO 
  * Client
  
-
-###Starting Contriboard using script (automatic)
-
-In your teamboard repository run start_contriboard scipt. 
-
-```
-sh start_contriboard.sh
-```
-Or you can start services manually as instructed below.
  
 ### Starting api & io
 
@@ -214,6 +205,20 @@ In some cases
 
 http://127.0.0.1:8000
 
+
+###Starting Contriboard using script (automatic)
+
+In your teamboard repository run start scipts. 
+
+Start Contriboard services (API and IO)
+```
+sh start_services.sh
+```
+
+Start Contriboard client
+```
+sh start_client.sh
+```
 
 ## 7. Development Workflow
 
