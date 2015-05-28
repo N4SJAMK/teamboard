@@ -18,4 +18,4 @@ git clone git@github.com:$USER/teamboard-img.git 	  img
 (cd api          && git remote add upstream git@github.com:N4SJAMK/teamboard-api.git)
 # (cd client       && git remote add upstream git@github.com:N4SJAMK/teamboard-client.git)
 (cd client-react && git remote add upstream git@github.com:N4SJAMK/teamboard-client-react.git)
-(cd client-react && git remote add upstream git@github.com:N4SJAMK/teamboard-img.git)
+(cd img && git remote add upstream git@github.com:N4SJAMK/teamboard-img.git)
