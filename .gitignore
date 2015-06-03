@@ -2,5 +2,6 @@ io/
 api/
 client/
 client-react/
+img/
 
 .vagrant/
