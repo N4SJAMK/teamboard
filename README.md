@@ -2,36 +2,36 @@
 
 ## About Guide
 
-This is a guide how to setup Contriboard development environment by using Vagrant-tool. [Vagrant](https://www.vagrantup.com/) provides fast and convinient way to deploy a development enviroment without extra work
+This is a guide how to setup Contriboard development environment by using Vagrant-tool. [Vagrant](https://www.vagrantup.com/) provides fast and convenient way to deploy a development environment without the extra work
 
 
 
 ## 1. Set up git, vagrant and download files
 
-As you see this is fast guide! We assume you can do some steps without extra guidance..
+As you can see this is a fast guide! We assume you can do some steps without extra guidance..
 
-  * Install Git client, vagrant, virtualbox and other needed librarys for you host machine.
+  * Install Git client, vagrant, virtualbox and other needed libraries for your host machine.
   * You should install and use latest version of Vagrant from https://www.vagrantup.com/
   * In Linux or Mac environment you can open shell/console and try to execute "vagrant" command! 
   * In Windows system you should use gitbash as console [Google](https://www.google.fi/search?q=gitbash&oq=gitbash&aqs=chrome..69i57.1352j0j4&sourceid=chrome&es_sm=93&ie=UTF-8)
-  * Create a new folder in your host machines local folders. Make sure there is enough room for virtual machine.
-  * Change you current folder in the new one (cd new_folder)
+  * Create a new folder in your host machines local folders. Make sure there is enough room for a virtual machine.
+  * Change your current folder to the new one (cd new_folder)
   * Your main task is to clone installation scripts in this folder.
-  * You can clone a teamboard-repository which contains all what you need.
+  * You can clone a teamboard-repository which contains all that you need.
   * Make sure your git client is installed....
 
 ```
 git clone https://github.com/N4SJAMK/teamboard
 ```
 
-  * After clone you should see all files in you local folder
+  * After clone you should see all files in your local folder
   
 
 ## 2. Initialize the workspace
 
 
 
-Initialize the workspace by running a initialization commands according you environment:
+Initialize the workspace by running initialization commands according to your environment:
 
 Files which you just cloned from teamboard repository will be your tools 
 
@@ -40,34 +40,34 @@ Now you have to make sure which way you want to clone current Contriboard edge s
   * SSH
   * HTTPS
 
-There is scripts for both of methods..
+There are scripts for both methods..
 
 If you can use direct ssh access and account to github use command:
 
 ```
-sh initialize_ssh.sh <your name>
+sh initialize-ssh.sh <your name>
 ```
 
-If you want to clone repositorys and fork it using https you should use command:
+If you want to clone repositories and fork it using https you should use command:
 
 ```
-sh initialize_https.sh <your name>
+sh initialize-https.sh <your name>
 ```
 
-If you have still problems you should try to do just a cloning repository!
+If you still have problems you should just try cloning a repository!
 
 ```
-sh initialize_https.sh
+sh initialize-https.sh
 ```
 
-This will clone the teamboard components into their respecting repositories.
+This will clone the teamboard components into their respective repositories.
 
 
 ## 3. Create a machine to develop on:
 
 Before creating a machine make sure the box image is correct:
 
-If you're not running a 64bit system, open vagrantfile from your teamboard folder and look for line:
+If you're not running a 64bit system, open vagrantfile from your teamboard folder and look for the following line:
 
 ```
 config.vm.box = "ubuntu/trusty64"
@@ -126,7 +126,7 @@ repositories.
 
 ## 6. Fast guide to start all Contriboad services
 
-During initialization all needed repositories are cloned in your host machine folders. In production environment deployment and service startup is handled little bit differently than in development environment.
+During initialization all needed repositories are cloned into your host machine folders. In production environment deployment and service startup is handled a bit differently than in the development environment.
 
 
 ## Service Starting order: 
@@ -139,7 +139,7 @@ During initialization all needed repositories are cloned in your host machine fo
 ### Starting api & io
 
 At first you have to start up teamboard-api and teamboard-io services
-Change you working directory to the service specific folder eg. teamboard-api or teamboard-io
+Change your working directory to the service specific folder eg. teamboard-api or teamboard-io
 All server side components are written using Node.js, so we have to use some node specific commands.
 
 ```
@@ -155,7 +155,7 @@ WINDOWS USER!!! There is some issues with symlinks in windows host when using va
 npm install --no-bin-links
 ```
 
-After succesfull build you can now start a service by using command
+After successful build you can now start a service by using command
 
 
 ```
@@ -164,7 +164,7 @@ npm start &
 
 
 
-We are starting up service as background process (&) [read more](http://stackoverflow.com/questions/4797050/how-to-run-process-as-background-and-never-die) , so you are able to use same console session to start another services. So you shoudl now do same process with another service component! . It would be more conviniet to run all services in own consoles.
+We are starting up service as background process (&) [read more](http://stackoverflow.com/questions/4797050/how-to-run-process-as-background-and-never-die) , so you are able to use same console session to start another services. So you should now do the same process with another service component! It would be more convenient to run all services in own consoles.
 
 ### Starting the new client (Windows)
 ```
@@ -173,7 +173,7 @@ npm install && gulp
 This will start a development server. If you are using Windows, use the
 `--no-bin-links` option with `npm install`. Alternatively don't use Windows.
 
-After the service is start, you should be able to see what port the service is
+After the service has started, you should be able to see what port the service is
 running on. If you have configured `vagrant` correctly, you can access the
 service at `http://localhost:<PORT>`.
 
