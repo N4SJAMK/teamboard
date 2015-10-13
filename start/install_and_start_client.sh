@@ -2,4 +2,4 @@
 
 cd /home/vagrant/teamboard-client-react/ && npm install
 nohup gulp &
-sleep 30
+sleep 60
